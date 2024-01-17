@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('pexels-rdne-stock-project-6936022.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(251, 239, 239, 0.516); /* Transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(23, 1, 1, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #05050e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #100f14;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('pexels-pavel-danilyuk-8423018.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #afa8c7ec;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #147ebff4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(17, 18, 20, 0.818);
+    text-align: center;
+}
+
+h1 {
+    color: #6c03fefc;
+    text-shadow: #131313;
+    text-decoration-color: #131313;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    -webkit-text-fill-color: #700aff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #131313;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #15e106e8;
+    color: #040404;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration-color: #0c0b10;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #0f0a13;
+    padding: 10px;
+    text-align: left;
+    background-color:rgb(223, 220, 233);
+}
+
+button {
+    margin-top: 20px;
+}
+
