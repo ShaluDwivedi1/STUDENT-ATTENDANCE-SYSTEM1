@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Attendance System</title>
+    <style> 
+        body { 
+            text-align: center; 
+        } 
+        h1 { 
+            color: green; 
+        } 
+        span { 
+            display: inline;  
+            background-color: green; 
+            color: white; 
+            padding: 10px; 
+        } 
+    </style> 
+</head>
+<body>
+    <form id="attendanceForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" required>
+        <button type="button" onclick="addStudent()">Add Student</button>
+    </form>
+
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Attendance</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceBody"></tbody>
+    </table>
+
+    <button onclick="markAttendance()">Mark Attendance</button>
+    <button onclick="attendancedisplaypage()">Attendance Display Page</button>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        function markAttendance() {
+            // Your attendance marking logic
+        }
+
+        function attendancedisplaypage() {
+            var studentNames = document.querySelectorAll('#attendanceBody tr td:first-child');
+            var studentNamesArray = Array.from(studentNames).map(td => td.textContent);
+
+            // Encode the student names in the URL parameter
+            var encodedStudentNames = encodeURIComponent(JSON.stringify(studentNamesArray));
+
+            // Navigate to another page using JavaScript
+            window.location.href = 'attendancedisplaypage.html?students=' + encodedStudentNames;
+        }
+     
+        function logout() {
+            // Clear authentication data or user-related data
+            // This example assumes you are using local storage for simplicity
+            localStorage.removeItem('authenticationToken'); // Assuming you use some form of authentication token
+
+            // Redirect to the login page or any other appropriate action
+            window.location.href = 'login.html';
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
