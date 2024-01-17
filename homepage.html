@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Attendance System</title>
+</head>
+<body>
+    <div class="homepage-container">
+        <h1>Welcome to the Student Attendance System</h1>
+        <p>Manage student attendance easily with our dynamic system.</p>
+        <form id="attendanceCheckForm">
+            <label for="monthSelect">Select Month:</label>
+            <select id="monthSelect" name="monthSelect">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+                <!-- Add other months as needed -->
+            </select>
+
+            <button type="button" onclick="checkAttendance()">Check Attendance</button>
+        </form>
+    </div>
+
+    <script>
+        function checkAttendance() {
+            var selectedMonth = document.getElementById('monthSelect').value;
+            
+            // Perform attendance check logic for the selected month
+            alert('Checking attendance for ' + selectedMonth);
+            // You can add more complex logic, such as making an API request or updating the UI
+        }
+    </script>
+        <a href="index.html">Enter today's attendance</a><!-- Link to your attendance page -->
+    </div>
+</body>
+</html>
